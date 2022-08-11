@@ -49,15 +49,35 @@
                           <th scope="col">Email</th>
                           <th scope="col">Phone</th>
                           <th scope="col">Address</th>
-                          <th scope="col">Update</th>
-                          <th scope="col">Delete</th>
-                          <th scope="col">View Full Profile</th>
+                          <th scope="col">Class Name</th>
+                          <th scope="col">Marks</th>
+                          <th scope="col">Total Fees Paid</th>
+                          <th scope="col">Total Fees Due</th>
                         </tr>
                       </thead>
+
+                      <tbody>
+                        {% for studentdata in show_stud_data %}
+                        <tr>
+                          <th scope="row">{{ studentdata['id'] }} </th>
+                          <td>{{ studentdata['name'] }}</td>
+                          <td>{{ studentdata['email'] }}</td>
+                          <td>{{ studentdata['phone'] }}</td>
+                          <td>{{ studentdata['address'] }}</td>
+                          <td>{{ studentdata['classname'] }}</td>
+                          <td>{{ studentdata['marks'] }}</td>
+                          <td>{{ studentdata['total_fees_paid'] }}</td>
+                          <td>{{ studentdata['total_fees_due'] }}</td>
+
+                        </tr>
+                        {% endfor %}
+                        <tr>
+                      </tbody>
 
                   </table>
               </div>
             </div>
+
 
 
 
