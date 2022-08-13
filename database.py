@@ -1,10 +1,13 @@
+import os
 
+from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 
-# app = Flask(__name__)
-# app.config['SQLALCHEMY_DATABASE_URI'] = 'oracle://hr:hr@127.0.0.1:1521/xe'
-db = SQLAlchemy()
-# app.config['SECRET_KEY'] = os.urandom(24)
+
+app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'oracle://hr:hr@127.0.0.1:1521/xe'
+db = SQLAlchemy(app)
+app.config['SECRET_KEY'] = os.urandom(24)
 
 
 # class users(db.Model):

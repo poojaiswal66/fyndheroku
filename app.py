@@ -4,11 +4,12 @@ from flask_sqlalchemy import SQLAlchemy
 from werkzeug.security import generate_password_hash, check_password_hash
 from werkzeug.utils import redirect
 from models import *
+from database import *
 
-app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'oracle://hr:hr@127.0.0.1:1521/xe'
-db = SQLAlchemy(app)
-app.config['SECRET_KEY'] = os.urandom(24)
+# app = Flask(__name__)
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'oracle://hr:hr@127.0.0.1:1521/xe'
+# db = SQLAlchemy(app)
+# app.config['SECRET_KEY'] = os.urandom(24)
 
 def getCurrentUser():
     user = None
