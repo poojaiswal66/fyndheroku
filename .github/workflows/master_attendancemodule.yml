@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'attendancemodule'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E1C73274EA0446EFB75C72DBD79FC852 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_BEDE8E0E294540D9ABD983D5DE9798C6 }}
