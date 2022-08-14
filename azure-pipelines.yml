@@ -4,7 +4,14 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/python
 
 trigger:
-- main
+- master
+- task: AzureWebApp@1
+  inputs:
+    azureSubscription: 'Free Trial (9bc36fb5-0b67-440e-8a95-cf0b757c8a6e)'
+    appType: 'webApp'
+    appName: 'attendancemodule1'
+    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    deploymentMethod: 'auto'
 
 variables:
   # Azure Resource Manager connection created during pipeline creation
