@@ -7,7 +7,8 @@ from models import *
 from database import *
 
 # app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'oracle://hr:hr@127.0.0.1:1521/xe'
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'oracle://hr:hr@127.0.0.1:1521/xe'
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:hr@localhost/Fynd'
 # db = SQLAlchemy(app)
 # app.config['SECRET_KEY'] = os.urandom(24)
 
