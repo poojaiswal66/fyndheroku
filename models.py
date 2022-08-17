@@ -12,7 +12,7 @@ class studentdata(db.Model):
     id = db.Column(db.Integer(), primary_key=True)
     name = db.Column(db.String(20), unique=False, nullable=False)
     email = db.Column(db.String(200), unique=False, nullable=False)
-    phone = db.Column(db.Integer(), unique=False, nullable=False)
+    phone = db.Column(db.BIGINT(), unique=False, nullable=False)
     address = db.Column(db.String(20), unique=False, nullable=False)
     classname = db.Column(db.String(20), unique=False, nullable=False)
     marks = db.Column(db.Integer(), unique=False, nullable=False, default=0)

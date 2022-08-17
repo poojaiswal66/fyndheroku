@@ -32,14 +32,13 @@
           {% endif %}
         </div>
 
-
         <div class="child child6  container" style="color:rgb(0, 75, 93);">
             <ul class="nav nav-tabs nav-fill mb-3">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="{{ url_for('facultydashboard')}}" style=" background-color:rgb(0, 75, 93); color:whitesmoke;">View All Students</a>
+                  <a class="nav-link active" aria-current="page" href="{{ url_for('views.facultydashboard')}}" style=" background-color:rgb(0, 75, 93); color:whitesmoke;">View All Students</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" style=" background-color:rgb(0, 75, 93); color:whitesmoke;" href="{{ url_for('addnewstudent')}}">Add New Student</a>
+                  <a class="nav-link" style=" background-color:rgb(0, 75, 93); color:whitesmoke;" href="{{ url_for('views.addnewstudent')}}">Add New Student</a>
                 </li>
               </ul>
 
@@ -70,10 +69,10 @@
                           <td>{{ studentdata['phone'] }}</td>
                           <td>{{ studentdata['address'] }}</td>
                           <td>{{ studentdata['classname'] }}</td>
-                          <td><a class="btn btn-sm" style="background-color:rgb(0, 75, 93); color:whitesmoke;" href="{{ url_for('fetchone', id = studentdata['id'] )}}">Update</a></td>
-                          <td><a class="btn btn-sm" style="background-color:rgb(0, 75, 93); color:whitesmoke;" href="{{ url_for('deletestudent', id = studentdata['id'] )}}">Delete</a></td>
-                          <td><a class="btn btn-sm" style="background-color:rgb(0, 75, 93); color:whitesmoke;" href="{{ url_for('attendanceredir', id = studentdata['id'] )}}">Mark Attendance</a></td>
-                          <td><a class="btn btn-sm" style="background-color:rgb(0, 75, 93); color:whitesmoke;" href="{{ url_for('singlestudent', id = studentdata['id'] )}}">View Full Profile</a></td>
+                          <td><a class="btn btn-sm" style="background-color:rgb(0, 75, 93); color:whitesmoke;" href="{{ url_for('views.fetchone', id = studentdata['id'] )}}">Update</a></td>
+                          <td><a class="btn btn-sm" style="background-color:rgb(0, 75, 93); color:whitesmoke;" href="{{ url_for('views.deletestudent', id = studentdata['id'] )}}">Delete</a></td>
+                          <td><a class="btn btn-sm" style="background-color:rgb(0, 75, 93); color:whitesmoke;" href="{{ url_for('views.attendanceredir', id = studentdata['id'] )}}">Mark Attendance</a></td>
+                          <td><a class="btn btn-sm" style="background-color:rgb(0, 75, 93); color:whitesmoke;" href="{{ url_for('views.singlestudent', id = studentdata['id'] )}}">View Full Profile</a></td>
                         </tr>
                         {% endfor %}
                         <tr>

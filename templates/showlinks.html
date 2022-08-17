@@ -3,22 +3,22 @@
 
 <ul class="nav nav-tabs nav-fill" style="background-color:rgb(0, 75, 93);">
     <li class="nav-item">
-      <a class="nav-link" style="color:whitesmoke;" href="{{url_for('index')}}">Home</a>
+      <a class="nav-link" style="color:whitesmoke;" href="{{url_for('views.index')}}">Home</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" style="color:whitesmoke;" href="{{url_for('login')}}">Login</a>
+      <a class="nav-link" style="color:whitesmoke;" href="{{url_for('login.login')}}">Login</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" style="color:whitesmoke;" href="{{url_for('register')}}">Register</a>
+      <a class="nav-link" style="color:whitesmoke;" href="{{url_for('register.register')}}">Register</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link"   style="color:whitesmoke;" href="{{url_for('studentdashboard')}}">Student Dashboard</a>
+      <a class="nav-link"   style="color:whitesmoke;" href="{{url_for('views.studentdashboard')}}">Student Dashboard</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" style="color:whitesmoke;" href="{{url_for('facultydashboard')}}">Faculty Dashboard</a>
+        <a class="nav-link" style="color:whitesmoke;" href="{{url_for('views.facultydashboard')}}">Faculty Dashboard</a>
       </li>
     <li class="nav-item">
-      <a class="nav-link"   style="color:whitesmoke;" href="{{url_for('index')}}">Logout</a>
+      <a class="nav-link"   style="color:whitesmoke;" href="{{url_for('views.index')}}">Logout</a>
     </li>
   </ul>
 
@@ -28,16 +28,16 @@
   {% macro showsocialmedialinks() %}
   <ul class="nav justify-content-center">
     <li class="nav-item">
-      <a class="nav-link"  style="color:rgb(0, 75, 93);"  href="#">Instagram</a>
+      <a class="nav-link"  style="color:rgb(0, 75, 93);"  href="https://www.instagram.com/fyndacademy/">Instagram</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link"  style="color:rgb(0, 75, 93);" href="#">Linkedin</a>
+      <a class="nav-link"  style="color:rgb(0, 75, 93);" href="https://www.linkedin.com/company/fynd-shopsense">Linkedin</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link"  style="color:rgb(0, 75, 93);" href="#">facebook</a>
+      <a class="nav-link"  style="color:rgb(0, 75, 93);" href="https://www.facebook.com/gofynd">facebook</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link"  style="color:rgb(0, 75, 93);" href="#">whatsapp</a>
+      <a class="nav-link"  style="color:rgb(0, 75, 93);" href="https://twitter.com/AcademyFynd">Twitter</a>
     </li>
   </ul>
   {% endmacro %}

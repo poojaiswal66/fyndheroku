@@ -42,10 +42,10 @@
         <div class="child child6 container" style="color:rgb(0, 75, 93);">
             <ul class="nav nav-tabs nav-fill mb-3">
                 <li class="nav-item">
-                  <a class="nav-link" style=" background-color:rgb(0, 75, 93); color:whitesmoke;"  href="{{ url_for('facultydashboard')}}"> View All Student</a>
+                  <a class="nav-link" style=" background-color:rgb(0, 75, 93); color:whitesmoke;"  href="{{ url_for('views.facultydashboard')}}"> View All Student</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" style=" background-color:rgb(0, 75, 93); color:whitesmoke;" href="{{ url_for('addnewstudent')}}">Add New Student</a>
+                  <a class="nav-link" style=" background-color:rgb(0, 75, 93); color:whitesmoke;" href="{{ url_for('views.addnewstudent')}}">Add New Student</a>
                 </li>
               </ul>
               <div class="table-responsive-lg caption-top">
@@ -78,15 +78,15 @@
                         <input type="text" class="form-control" id="classname" value = "{{show_stud_data['classname']}}" name = "classname">
                       </div>
                        <div class="mb-2">
-                        <label for="marks" class="form-label">Class Name</label>
+                        <label for="marks" class="form-label">Marks</label>
                         <input type="text" class="form-control" id="marks" value = "{{show_stud_data['marks']}}" name = "marks">
                       </div>
                        <div class="mb-2">
-                        <label for="total_fees_paid" class="form-label">Class Name</label>
+                        <label for="total_fees_paid" class="form-label">Total Fees Paid</label>
                         <input type="text" class="form-control" id="total_fees_paid" value = "{{show_stud_data['total_fees_paid']}}" name = "total_fees_paid">
                       </div>
                        <div class="mb-2">
-                        <label for="total_fees_due" class="form-label">Class Name</label>
+                        <label for="total_fees_due" class="form-label">Total Fees Due</label>
                         <input type="text" class="form-control" id="total_fees_due" value = "{{show_stud_data['total_fees_due']}}" name = "total_fees_due">
                       </div>
                       {% endif %}
