@@ -2,8 +2,9 @@ html,
 body
 {    height: 100%;    background-color:whitesmoke;    color:rgb(0, 75, 93);}
 
-.parent{    height: 100%;    display: grid;    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 10% 5% 7% auto 7%;    }
+.parent{       display: grid;    grid-template-columns: repeat(4, 1fr);
+
+       }
 
 .child{ margin-bottom: 10px;}
 .child1{ grid-column: 1/2;  grid-row: 1/2;}
@@ -31,21 +32,26 @@ body
 }
 
 .centercontent{
-    width: 100%;
-    height: 100%;
-    position: relative;
+    height: 70vh;
+    display: flex;
+
 }
 
 .textcontent
 {
-    flex-grow: 1;
-    text-align:center;
-    position:absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: grid;
+    place-items: center;
+    flex: 1;
 }
 .textcontent h1
 {
     font-size: 100px;
+}
+.img_container
+{
+    flex: 1;
+}
+.img_container img
+{
+    width: 100%;
 }
